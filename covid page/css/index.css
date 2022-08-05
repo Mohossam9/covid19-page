@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* scroll button */
+.scroll{
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom:20px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #6F42C1;
+    color:white;
+    border-radius: 50%;
+}
+
+
+.clearfix{
+    clear: both;
+}
+
+.container
+{
+    width:1180px;
+    margin: 0px auto ;
+}
+h1{
+    color:#6F42C1; text-transform: capitalize; font-size: 30px; font-weight: 800; font-family: cursive; margin-bottom: 20px;
+}
+p, li {color: gray}
+
+/* website color change */
+
+[default-color='#1abc9c'] .backcolor
+{
+    background-color: #1abc9c;
+}
+
+[default-color='#3498db'] .backcolor
+{
+    background-color: #3498db;
+}
+
+[default-color='#27ae60'] .backcolor
+{
+    background-color: #27ae60;
+}
+
+[default-color='#e74c3c'] .backcolor
+{
+    background-color: #e74c3c;
+}
+
+/* menu */
+menu 
+{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: -300;
+    top: 69;
+    z-index:999;
+    background-color:#F0ECF9;
+    text-align: center;
+}
+
+menu h1 { margin-top: 100px;}
+menu ul li {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/* nav bar */
+nav { width: 100%; height: 70px; background-color: #F0ECF9; text-transform: capitalize; line-height: 70px;
+overflow: hidden; position: fixed; z-index: 10;}
+nav .clickmenu {float:left; width: 2%; margin-top: 20px; margin-right: 50px; cursor: pointer;}
+nav .clickmenu .bar {width: 25px; height: 4px; margin: 5px 5px; background-color: #000; }
+nav span {float:left; font-size:25px; font-family: monospace;}
+nav .container > ul{list-style-type: none; list-style-position: outside; float: right; margin: 0px;}
+nav .container > ul > li {display: inline-block; margin-right: 35px; font-weight: 50; font-family: sans-serif;}
+nav .container > ul > li > ul {display: none; position: fixed; list-style-type: none; list-style-position:outside; font-family: sans-serif; line-height: 35px; background-color: white; padding: 2px; border-top: 2px solid #6F42C1;}
+nav .container > ul > li > ul li:hover {background-color:#F0ECF9 }  
+nav .container > ul >li:hover {cursor: pointer}
+
+.navchoice {color:#F05; font-weight: bolder;}
+nav .container > ul > li:hover ul {display:block}
+
+/* header */
+header {width: 100%; height: 500px; background-color: #F0ECF9; border-bottom-right-radius: 40%; overflow: hidden;}
+header section { width: 50%; float: left; margin: 100px 0px;}
+header .text p:first-of-type {color: #B097DD; font-size: 20px; text-transform: uppercase; font-weight: 500;}
+header .text p:last-of-type {line-height: 30px; font-size: 20px; margin-top: 30px;}
+
+header .text button { margin-top: 30px; background-color:#6F42C1; text-align: center; text-transform: uppercase; color: white; padding: 15px; border-radius: 25px; font-size: 15px; border:none;}
+header .fig img {width: 100%; height: 500px;}
+
+header .text button:hover {cursor: pointer;}
+
+/* statistics */ 
+.stat {width: 100%; height: 320px; margin-top: 50px; overflow: hidden; text-align: center;}
+.stat .container >p {text-align: center; margin-top: 10px;}
+.stat .container div {width:32%; float: left; text-align: center; margin-top: 40px; border: 2px solid #6F42C1; margin-right: 5px; padding: 20px;}
+.stat div img { margin: 0px auto; display: block; text-align: center;}
+.stat div span {font-size: 40px; font-weight: 1000;}
+.stat div p {font-size: 20px; margin-top: 5px; text-transform: capitalize;}
+
+/* def */
+.def {width: 100%; height: 350px; margin-top: 100px; overflow: hidden;}
+.def section {width: 40%; float: left; position: relative;}
+.def .vid {margin-right: 10%;}
+.def .vid img {width: 100%; height: 100%; z-index: 0;}
+.def .vid span {position: absolute; bottom: 15px; right: 70px; z-index: 5; color: white; font-size: 30px;}
+.def .vid button {position: absolute; bottom: 0; right: 0; z-index: 5; width: 60px; height: 60px; background-color:#6F42C1; color: white;}
+
+.def .vid button img {width: 80%; height: 40px;}
+.def .vid button:hover{cursor: pointer;}
+
+
+
+.def .deftext p {font-size: 20px; margin-top: 5px; line-height: 30px }
+.def .deftext ul { margin-top: 20px}
+.def .deftext ul li {margin-top: 10px; font-size: 20px; list-style-image: url(../images/verified.png); list-style-position: inside; }
+.def .deftext button {margin-top: 30px; background-color:#6F42C1; text-align: center; text-transform: uppercase; color: white; padding: 15px; border-radius: 25px; font-size: 15px; border:none;}
+
+.def .deftext button:hover {cursor: pointer;}
+/* ways */ 
+
+.ways { width: 100%; height: 200px; margin-top: 100px; overflow: hidden;}
+.ways section{width: 24%; float: left; margin:5px; border: 2px solid #6F42C1; padding: 20px; border-radius: 20px; box-shadow: 10px 10px 8px #6f42c1;}
+.ways section .photo {width: 40%; float: left;}
+.ways section .way {width: 60%; float: left;}
+.ways section div img {width: 80%;}
+.ways section .way h3 {color:#6F42C1; font-size: 20px;}
+.ways section .way p {margin-top: 10px; font-size: 15px;}
+
+/* prevent */ 
+.prevent {width: 100%; height: 800px; background-color:#F8F5FC; overflow: hidden;}
+.prevent .rules {width: 40%; float: left; height: 1000px; margin-right: 10%}
+.prevent .prevetext{width: 40%; float: left;}
+.prevent .icon {margin-top: 50px;}
+.prevent .upperleft .icon {margin-top: 80px;}
+.prevent .lowerleft .icon {margin-top: 80px;}
+.prevent .rules .upper div{float: left; width: 45%; margin-right: 20px;}
+.prevent .rules .lower div{float: left;width: 45%; margin-right: 20px;}
+
+.prevent .rules .icon { width: 100%; height: 100px; background-color:#E2D9F3; text-align: center; line-height: 200px; border-top-left-radius: 20px; border-top-right-radius: 20px;}
+.prevent .rules .icon img {margin: 20px;}
+.prevent .rules .word { width: 100%; height: 200px; background-color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 20px;}
+.prevent .rules .word h3 {color:#6F42C1; text-transform: capitalize; text-align: center;}
+.prevent .rules .word p {text-transform: capitalize; line-height: 25px; margin: 20px auto;}
+
+.prevent .prevetext {margin-top: 200px;}
+
+.prevent .prevetext p{font-size: 20px; margin-top: 5px; line-height: 30px }
+.prevent .prevetext ul {margin-top: 20px}
+.prevent .prevetext ul li {margin-top: 10px; font-size: 20px; list-style-image: url(../images/verified.png); list-style-position: inside;}
+.prevent .prevetext button {margin-top: 30px; background-color:#6F42C1; text-align: center; text-transform: uppercase; color: white; padding: 15px; border-radius: 25px; font-size: 15px; border:none;}
+
+.prevent .prevetext button:hover{cursor: pointer;}
+/* protection */ 
+.protection {width: 100%; height: 200px; text-align: center; margin-top: 100px; overflow: hidden; line-height: 30px;}
+
+.protection h4 {color:#888;text-transform: capitalize; font-size: 20px;}
+.protection p {margin-top: 20px;}
+
+/* advice */
+.advice {width: 100%; height: 500px; overflow: hidden; font-family: cursive;}
+.advice .advicelists ,.advice .adviceimg {width: 50%; float: left;}
+.advice .advicelists div {float: left; width: 50%;}
+.advice .advicelists h3 {margin-top: 100px;}
+.advice .advicelists ul {list-style-position: inside; line-height: 40px; margin-top: 20px;}
+#leftlist{list-style-image: url(../images/do.png)}
+#rightlist{list-style-image: url(../images/avoid.png)}
+.advice .adviceimg img {height: 420px; width:95%;}
+
+/* symp */
+.symptoms {width: 100%; padding: 40px;  background-color:#F8F5FC; overflow: hidden; height: 750px; font-family: cursive}
+.symptoms .sympdef {width: 100%;text-align: center; height: 150px; padding: 20px;}
+
+.symptoms .sympsides {width: 45%; float: left; background-color: white; height: 180px; margin: 1.25%; padding: 30px; box-shadow: 0.1px 0.1px 2px #6F42C1;}
+.symptoms .sympsides .sympimg {float: left; width: 20%;}
+.symptoms .sympsides .sympimg img {width: 80%; height: 100px;}
+.symptoms .sympsides .symptext {float: left; width: 80%;}
+.symptoms .sympsides .symptext h5 { color:#6F42C1; text-transform: capitalize; font-size: 20px;}
+.symptoms .sympsides .symptext p {margin-top: 10px;}
+
+.symptoms .help {width: 100%; margin-top: 30px; height: 100px;}
+.symptoms .help p {float:left; width: 60%; margin-left: 10%;}
+.symptoms .help p span{color:#6F42C1; font-size: 20px; font-weight: 800; }
+.symptoms .help button {float: left; width: 15%; background-color:#6F42C1; text-align: center; text-transform: uppercase; color: white; padding: 10px; border-radius: 25px; font-size: 15px; border:none;}
+
+.symptoms .help button:hover {cursor: pointer;}
+
+ /* news */ 
+.news {width: 100%; height: 500px; overflow: hidden; font-family: cursive; margin-top: 80px; color:lightgray}
+.news .newsintro {text-align: center; height: 100px;}
+
+.news .stories {width: 100%; margin-top: 50px;}
+.news .stories div {width: 30%; float: left; margin: 1%; position: relative;font-size: 20px;}
+.news .stories div img {width: 100%; height: 250px; z-index: 0;}
+.news .stories div .center {background-color: #6F42C1; color: white; position: absolute; z-index: 1; bottom:-5px; left: 35%; padding:5px 15px; font-size: 15px; display: block;}
+
+.news .stories div .iconleft { position: absolute; left: 15%; bottom:-20%;}
+.news .stories div .iconleft img {width: 18px; height: 18px;}
+.news .stories div .iconright { position: absolute; right: 15%; bottom:-20%;}
+.news .stories div .iconright img{height: 18px; width: 18px;}
+
+.news .stories div h5 {position: absolute; left: 13%; bottom: -32%; color:lightgray}
+
+.news .stories div .iconleft:hover.iconleft{cursor: pointer; color: #6F42C1}
+.news .stories div .iconright:hover.iconright{cursor: pointer; color: #6F42C1}
+.news .stories div h5:hover {color:#6F42C1; cursor: pointer}
+
+/* footer */
+.footer{width: 100%; overflow: hidden; height: 300px; margin-top: 100px; font-family: cursive; color:gray; }
+.footer section {padding: 5px;}
+.footer section h6 {font-size: 20px; color:black;  border: 2px solid #6F42C1; text-align: center; margin-bottom: 30px;}
+.footer .footer1 {width: 30%; float: left;height: 300px;}
+.footer .footer2 , .footer .footer3 , .footer .footer4 {float: left; width: 20%;}
+
+.footer .footer1 p {margin-bottom: 40px;}
+.footer .footer1 a {margin-right: 40px;}
+.footer section ul {list-style-position: inside; list-style-type: none; text-align: center; line-height: 30px;}
+.footer section ul li {color: #6F42C1}
+.footer section ul li:hover {color:black; cursor: pointer;}
+
+/* copyright */
+.copyright {width: 100%;}
+.copyright p{color: black; text-align: center; margin-top: 50px; margin-bottom: 50px;
+text-shadow: 5px 5px 10px black}
+.copyright p a { color:#6F42C1; text-shadow: 5px 5px 10px #6F42C1; text-decoration: none;}
